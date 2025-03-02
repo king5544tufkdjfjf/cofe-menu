@@ -1,0 +1,156 @@
+body {
+    background-color: black;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 8vw;
+    position: relative;
+    top: -2vw;
+    opacity: 0.8;
+    color: rgb(90, 0, 0);
+    transition: font-size 0.5s ease, color 0.5s ease;
+}
+
+p {
+    text-align: center;
+    color: rgb(90, 0, 0);
+    font-size: 4vw;
+    position: relative;
+    top: -1vw;
+    transition: font-size 0.5s ease, color 0.5s ease;
+}
+
+.head-text {
+    position: relative;
+    top: -3vw;
+}
+
+h1, p {
+    color: #FFD700;
+    text-shadow: 0.3vw 0.3vw 0.5vw black;
+    opacity: 1;
+    transition: opacity 0.5s ease, color 0.5s ease;
+}
+
+.post-text {
+    font-size: 1.8vw;
+    text-align: center;
+    color: blue;
+    transition: color 0.5s ease;
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 5vw 0;
+}
+
+.post {
+    background-color: rgb(0, 0, 148);
+    color: black;
+    padding: 1vw 3vw 2vw 3vw;
+    width: 35%;
+    margin: 2vw;
+    position: relative;
+    top: 3vw;
+    border-radius: 2vw;
+    transition: background 1s ease, transform 1s ease;
+    opacity: 0.5;
+}
+
+.post:hover {
+    background-color: #FFD700;
+    transform: scale(1.05) rotate(360deg);
+opacity: 1;
+}
+
+.post-img {
+    width: 100%;
+    height: auto;
+    border: 0.2vw solid transparent;
+    border-radius: 1vw;
+    transition: border-width 1s ease, border-color 1s ease, border-radius 1s ease;
+}
+
+.post-img:hover {
+    border: 0.5vw solid black;
+    border-radius: 1.5vw;
+    filter: drop-shadow(0px 0px 30px #000000);
+}
+
+h2 {
+    text-align: center;
+    font-size: 3vw;
+    position: relative;
+    top: 2vw;
+    transition: font-size 0.5s ease;
+}
+
+.details-content {
+    max-height: 0;
+    overflow: hidden;
+    text-align: left;
+    font-size: 1.6vw;
+    margin-top: 1vw;
+    background-color:  rgb(0, 0, 148);
+    color: #FFD700;
+    padding: 1vw;
+    border-radius: 1vw;
+    transition: max-height 1.5s ease-in-out;
+}
+
+
+.details-btn {
+    display: block;
+    margin: 1vw auto;
+    padding: 0.8vw 1.6vw;
+    font-size: 1.8vw;
+    background-color: blue;
+    color: black;
+    border: none;
+    border-radius: 1vw;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.details-btn:hover {
+    background-color: yellow;
+    color: blue;
+    transform: scale(1.05) rotate(360deg);
+    transition: 0.5s linear;
+}
+
+.show {
+    max-height: 20vw;
+}
+table{
+    padding-top: 20px;
+}
+
+/* Адаптивність */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 6vw;
+    }
+
+    p {
+        font-size: 3vw;
+    }
+
+    .post {
+        width: 90%;
+        margin: 1vw 0;
+    }
+
+    .info {
+        flex-direction: column;
+        padding: 2vw 0;
+    }
+}
